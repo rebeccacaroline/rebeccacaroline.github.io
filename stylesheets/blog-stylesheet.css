@@ -1,0 +1,19 @@
+.head{
+  margin-left: 50px;
+  width: 150px;
+}
+
+p {
+  display: block;
+  float: center;
+  padding: 5px;
+  margin-left: 250px;
+  margin-right: 250px;
+}
+
+td {
+  text-align: center;
+  width: 1%;
+  font-size: 15px;
+  font-weight: bold;
+}
