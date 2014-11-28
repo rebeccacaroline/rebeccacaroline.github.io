@@ -79,22 +79,9 @@ a:visited{
   width: 100px
   height: 100px
   border: 1px solid #A60000;
-  margin: 25px 50px 10px 50px;
+  margin: 25px 100px 10px 275px;
 }
 
-#cultural {
-  margin-top: -250px;
-}
-
-#technical {
-}
-
-.blog {
-  font-family: Open Sans Condensed;
-  font-size: 50px;
-  margin-left: 500px;
-  margin-bottom: 50px;
-}
 
 p {
   font-size: 20px;
@@ -125,4 +112,29 @@ h1 {
 h2 {
   font-family: Open Sans Condensed;
   color: #000056;
+}
+
+h4 {
+  font-size: 20px
+  font-weight: bolder;
+  text-align: center;
+  margin-right: 50px;
+  margin-top -300px;
+}
+
+#contactme {
+  font-family: Open Sans Condensed;
+  color: #000056;
+  text-align: left;
+  margin-top: 200px;
+  font-size: 35px;
+}
+
+header {
+  font-family: Lobster;
+  font-size: 50px;
+  text-align: center;
+  border-bottom: 1px solid #A60000;
+  margin: 15px 20px 15px 15px;
+  padding: 10px;
 }
