@@ -16,7 +16,7 @@
 
   <section>
     <p>
-      I chose to research fixed, absolute, and relative positioning because I just didn't get it. When I started the research at first I thought, "Huh?!?" However, I did have an 'aha!' moment during my extensive research so if you have a moment and want to learn, I will walk you through what I discovered. One thing to keep in mind is that every element on a web page is a block, which is a rectangle of pixels.
+      I chose to research fixed, absolute, and relative positioning because I just didn't get it this week. Reading the first article I found, I was even more confused."Huh?!?" I though. However, I dug and I dug and I did have an 'aha!' moment during my extensive research. so if you have a moment and want to learn, I can walk you a brief synopsis of what I discovered. The very first thing you have to learn is that every element on a web page is a block, which is web developer-speak for "a rectangle of pixels."
     </p>
     <h4>Static Positioning</h4>
     <p>
@@ -24,15 +24,23 @@
     </p>
     <h4>Absolute Positioning</h4>
     <p>
-      When you position a block 'absolutely,' you take it out of the web page and place it exactly where you want it. This means that you can move it on top of another element, and you can put it outside of the margins of the page's body. This also means that all of the blocks that were placed around the absolute element on the HTML page are not affected by the positioning of the absolute block. For example, if you had three static blocks in an HTML page, the block that comes earlier in the HTML page would be seen above the other block on the web page like so: ![link](untitledhtml.png) ![link](untitledscreen.png). However, if the middle block were positioned absolutely, you could move that block over like so: ![link](absolutescreen.png) and the other blocks would act like the absolute block wasn't even there.
+      When you position a block 'absolutely,' you take it out of the web page and place it exactly where you want it. This means that you can move it on top of another element, and you can put it outside of the margins of the page's body. This also means that all of the blocks that were placed around the absolute element on the HTML page readjust themselves as if the absolute block were never there in the first place. For example, if you had three static blocks in an HTML page, the block that comes earlier in the HTML page would be seen above the other block on the web page like so:
+      <img src="https://raw.githubusercontent.com/rebeccacaroline/rebeccacaroline.github.io/master/blog/untitledhtml.png" alt ="html" />
+      <img src="https://raw.githubusercontent.com/rebeccacaroline/rebeccacaroline.github.io/master/blog/untitledscreen.png" alt="screenshot" />.
+      However, if the middle block were positioned absolutely, you could move that block over like so:
+      <img src="https://raw.githubusercontent.com/rebeccacaroline/rebeccacaroline.github.io/master/blog/absolutescreen.png" alt="absolute screenshot" /> and the other blocks would act like the absolute block wasn't even there.
     </p>
     <h4>Relative Positioning</h4>
     <p>
-      Relative positioning makes it possible for blocks to move relative to where they otherwise would have been. Unlike absolute positioning, the other blocks don't readjust to the relative block. Here's an example, with the same blocks as before: ![link](relativescreen.png). As you can see, the other blocks didn't readjust, and because of this the relative block is on top of one of the static blocks.
+      Relative positioning makes it possible for blocks to move relative to where they otherwise would have been. Unlike absolute positioning, the other blocks don't readjust to the relative block. Here's an example, with the same blocks as before:
+      <img src="https://raw.githubusercontent.com/rebeccacaroline/rebeccacaroline.github.io/master/blog/relativescreen.png" alt="relative screenshot"/>!
+      As you can see, the other blocks didn't readjust, and because of this the relative block is on top of one of the static blocks. You have to be aware of this when using the relative position.
     </p>
     <h4>Absolute AND Relative Positioning</h4>
     <p>
-      This is really cool, and this is where I had my 'aha!' moment. Basically, in an html page, you can have blocks inside of blocks. If you have one absolute block, and relative blocks INSIDE of the absolute block, you can make your relative blocks <em>relative</em> to the parent absolute block! Here's an example of blocks inside blocks (the parent block is absolute and the other blocks are relative): ![link](abrel.png). The two bottom sentences are right-aligned, but since they are relative to the parent block, they are only right-aligned to the border of the parent block.
+      This is really cool, and this is where I had my 'aha!' moment. Basically, in an html page, you can have blocks inside of blocks. If you have one absolute block, and relative blocks INSIDE of the absolute block, you can make your relative blocks <em>relative</em> to the parent absolute block! Here's an example of blocks inside blocks (the parent block is absolute and the other blocks are relative):
+      <img src="https://raw.githubusercontent.com/rebeccacaroline/rebeccacaroline.github.io/master/blog/abrel.png" alt="absolutely relative" />!
+      The two bottom sentences are right-aligned, but since they are relative to the parent block, they are only right-aligned to the border of the parent block.
     </p>
     <h4>Fixed Positioning</h4>
     <p>
