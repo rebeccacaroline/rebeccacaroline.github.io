@@ -1,5 +1,12 @@
 body {
-  background-color: #E6F2FF
+  background: linear-gradient(
+    to bottom,
+    #E6F2FF,
+    #E6F2FF 50%,
+    #FFFFFF 50%,
+    #FFFFFF
+    );
+  background-size: 100% 20px;
 }
 
 #title {
