@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <link rel="stylesheet" type="text.css" href="../stylesheets/default.css" >
+  <link href='http://fonts.googleapis.com/css?family=Lobster|Open+Sans+Condensed:300' rel='stylesheet' type='text/css'>
+  <link rel="stylesheet" type="text/css" href="../stylesheets/blog-stylesheet.css" >
+  <title>Grouping Method</title>
+  <meta charset="UTF-8">
+</head>
+
+<body>
+  <div class="head"><h1>Grouping Method</h1></div>
+  <div class="head"><h4>December 11, 2014</h4></div>
+  <div class="head"><h4>Rebecca Holzschuh</h4></div>
+
+  <section>
+    <p>
+      I chose to research the method Enumerable#group_by, because I had never seen or heard of it before. Basically, this method enables you to group values into a hash based on criteria that you can set. You can either give the method a code block and tell the method exactly how you want to group the numbers. For example, if you had all the numbers from 1-10 and you wanted to know how what the remainder of each number would be if you divided each number by 4, you could use #group_by and it would return a hash like so:
+        <!-- HTML generated using hilite.me --><div style="background: #ffffff; overflow:auto;width:auto;border:solid gray;border-width:.1em .1em .1em .8em;padding:.2em .6em; margin: 0px 250px 0px 250px;"><pre style="margin: 0; line-height: 125%">puts (1..10).group_by {|i| i%4}
+        {1=&gt;[1, 5, 9], 2=&gt;[2, 6, 10], 3=&gt;[3, 7], 0=&gt;[4, 8]}
+        </pre></div>
+    </p>
+    <p>
+      As you can see, the output gives you a hash. The keys of the hash are the remainders, and the values are the numbers which, when divided by 4, give you that remainder. This is useful if you want to iterate over different groups within a collection of values. You don't have to give the method a code block though. If you don't give the method a code block, the method will return an Enumerator object, like so:
+        <!-- HTML generated using hilite.me --><div style="background: #ffffff; overflow:auto;width:auto;border:solid gray;border-width:.1em .1em .1em .8em;padding:.2em .6em; margin:0px 250px 0px 250px;"><pre style="margin: 0; line-height: 125%">puts (1..10).group_by
+        <span style="color: #008000">#&lt;Enumerator:0x007f8b3a9112f8&gt;</span>
+        </pre></div>
+    </p>
+    <p>
+      You can also use #group_by with an array of strings, but you cannot use #group_by with just one string. One could use regular expressions in the code block, but that's another blog post for another day. Here's an example of an array of strings, that I'm grouping by which ones include the letter "a:"
+        <!-- HTML generated using hilite.me --><div style="background: #ffffff; overflow:auto;width:auto;border:solid gray;border-width:.1em .1em .1em .8em;padding:.2em .6em; margin: 0px 250px 0px 250px"><pre style="margin: 0; line-height: 125%">puts [<span style="color: #a31515">&quot;I&quot;</span>, <span style="color: #a31515">&quot;am&quot;</span>, <span style="color: #a31515">&quot;an&quot;</span>, <span style="color: #a31515">&quot;amazing&quot;</span>, <span style="color: #a31515">&quot;programmer&quot;</span>].group_by {|i| i.include?(<span style="color: #a31515">&quot;a&quot;</span>)}
+        {<span style="color: #0000ff">false</span>=&gt;[<span style="color: #a31515">&quot;I&quot;</span>], <span style="color: #0000ff">true</span>=&gt;[<span style="color: #a31515">&quot;am&quot;</span>, <span style="color: #a31515">&quot;an&quot;</span>, <span style="color: #a31515">&quot;amazing&quot;</span>, <span style="color: #a31515">&quot;programmer&quot;</span>]}
+        </pre></div>
+
+    </p>
+
+
+  </section>
+
+  <table>
+    <tr>
+      <td>
+        <a href="http://rebeccacaroline.github.io/blog/t3-arrays-hashes.html">Earlier</a>
+      </td>
+      <td>
+        <a href="http://rebeccacaroline.github.io/blog/index.html">Blog Home</a>
+      </td>
+      <td>
+        <a href="#">Later</a>
+      </td>
+    </tr>
+  </table>
+
+</body>
+</html>
+
