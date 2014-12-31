@@ -45,14 +45,9 @@ span {
   color:#000056;
 }
 
-.link {
-  display: inline-block;
-  margin: 50px 60px 20px 60px;
-}
-
 .pic {
-  width: 350px;
-  height: 300px;
+  width: 150px;
+  height: 100px;
   border: 1px solid #A60000;
 }
 
@@ -123,6 +118,13 @@ table {
   color: #000056;
 }
 
+h3 {
+  font-family: Open Sans Condensed;
+  font-weight: bolder;
+  color: #000056;
+  font-size: 30px;
+}
+
 h4 {
   font-size: 20px;
   font-family: Open Sans Condensed;
@@ -154,17 +156,26 @@ h4 {
   margin-top -300px;
 }
 
-.container {
-  width: 100%;
-  height: 100%;
-  padding: 6%;
+#technical {
+  float:left;
+  margin-left: 17%;
+}
+
+#cultural {
+  float:right;
+  margin-right: 17%;
 }
 
 .blogtitle {
-  margin-top: 10px;
   font-size: 1.2em;
   font-weight: bold;
   font-family: Open Sans Condensed;
+}
+
+.small {
+  font-size: .75em;
+  margin-top: -5px;
+  margin-bottom: 30px;
 }
 
 header {
@@ -178,7 +189,10 @@ header {
 
 footer {
   margin: 9% 40% 2% 40%;
+}
 
+#bottom{
+  margin-top: 100%;
 }
 
 .clearfix {
