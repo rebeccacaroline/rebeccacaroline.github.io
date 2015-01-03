@@ -32,10 +32,22 @@
       p @cost
     <span style="color: #0000ff">end</span>
     <span style="color: #0000ff">def</span> summary
-      p <span style="color: #a31515">&quot;This book, #{</span>@title<span style="color: #a31515">} was written by #{</span>@author<span style="color: #a31515">} in #{</span>@year<span style="color: #a31515">} and costs $#{</span>@cost<span style="color: #a31515">}&quot;</span>
+      p <span style="color: #a31515">&quot;This book, #{</span>@title<span style="color: #a31515">}, was written by #{</span>@author<span style="color: #a31515">} in #{</span>@year<span style="color: #a31515">} and costs $#{</span>@cost<span style="color: #a31515">}&quot;</span>
     <span style="color: #0000ff">end</span>
 <span style="color: #0000ff">end</span>
       </pre></div>
+    </p>
+    <p>
+      Let's say I wanted to create a new Book instance, with the novel <em>Emma</em> by Jane Austen. I would go about that by creating a new class and assigning values to each of the variables. I would then call the methods #cost and #summary.<!-- HTML generated using hilite.me --><div style="background: #ffffff; overflow:auto;width:auto;border:solid gray;border-width:.1em .1em .1em .8em;padding:.2em .6em; margin: 0px 250px 0px 250px;"><pre style="margin: 0; line-height: 125%">emma = Book.new(<span style="color: #a31515">&quot;Emma&quot;</span>, <span style="color: #a31515">&quot;Jane Austen&quot;</span>, 1815, 264)
+emma.cost
+emma.summary
+</pre></div>
+    </p>
+    <p>
+      The output of calling the class is the following (this is a limited edition version of the novel, hence the price):
+      <!-- HTML generated using hilite.me --><div style="background: #ffffff; overflow:auto;width:auto;border:solid gray;border-width:.1em .1em .1em .8em;padding:.2em .6em; margin: 0px 250px 0px 250px;"><pre style="margin: 0; line-height: 125%"><span style="color: #a31515">&quot;52.80&quot;</span>
+<span style="color: #a31515">&quot;This book, Emma, was written by Jane Austen in 1815 and costs $52.80&quot;</span>
+</pre></div>
     </p>
     <p>
       Instance methods are methods that are inside of classes and are called on <em>instances</em> of the class. They are called instance methods because they are methods that are activated for each instance of the class and not on the class itself. For example, the method #cost, which calculates the cost of the book based on the length of the book, is called on a new book, not on the class "Book." In order to use an instance method, you need to create a new instance.
