@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <link rel="stylesheet" type="text.css" href="../stylesheets/default.css" >
+  <link href='http://fonts.googleapis.com/css?family=Lobster|Open+Sans+Condensed:300' rel='stylesheet' type='text/css'>
+  <link rel="stylesheet" type="text/css" href="../stylesheets/blog-stylesheet.css" >
+  <title>Blocks and Procs and all those Ruby things</title>
+  <meta charset="UTF-8">
+</head>
+
+<body>
+  <div class="head"><h1>Blocks and Procs and all those Ruby things</h1></div>
+  <div class="head"><h2>Lambdas Also</h2></div>
+  <div class="head"><h4>January 12, 2014</h4></div>
+  <div class="head"><h4>Rebecca Holzschuh</h4></div>
+
+  <section>
+    <h4>Blocks</h4>
+    <p>
+      Blocks are sets code that we have used during this course. A set of things that Ruby is assigned to do is called a block. Blocks either start and end with curly braces ({}), or with a do and an end. Here is an example of a block:
+      <!-- HTML generated using hilite.me --><div style="background: #ffffff; overflow:auto;width:auto;border:solid gray;border-width:.1em .1em .1em .8em;padding:.2em .6em; margin: 0px 250px 0px 250px;"><pre style="margin: 0; line-height: 125%">array = [<span style="color: #a31515">&quot;ruby&quot;</span>, <span style="color: #a31515">&quot;javascript&quot;</span>, <span style="color: #a31515">&quot;python&quot;</span>, <span style="color: #a31515">&quot;lisp&quot;</span>]</div>
+    </p>
+    <p>
+      The block part of that code was the code inside the curly braces - it is what is telling Ruby what to do.
+    </p>
+    <h4>Procs</h4>
+    <p>
+      Proc is short for procedure. A proc is a block stored in a variable, to be used multiple times. The reason one would use a proc is to be able to reuse a block. Procs are their own class, so when you create one you would use the syntax new_proc = Proc.new. Here is an example of a new creation of a proc:
+      <!-- HTML generated using hilite.me --><div style="background: #ffffff; overflow:auto;width:auto;border:solid gray;border-width:.1em .1em .1em .8em;padding:.2em .6em; margin: 0px 250px 0px 250px;"><pre style="margin: 0; line-height: 125%">string = Proc.new <span style="color: #0000ff">do</span> |n|
+  puts <span style="color: #a31515">&quot;Hi, my name is #{</span>n<span style="color: #a31515">}!&quot;</span>
+<span style="color: #0000ff">end</span>
+</pre></div>
+    </p>
+    <p>
+      You can then call this Proc like so:
+      <!-- HTML generated using hilite.me --><div style="background: #ffffff; overflow:auto;width:auto;border:solid gray;border-width:.1em .1em .1em .8em;padding:.2em .6em; margin: 0px 250px 0px 250px"><pre style="margin: 0; line-height: 125%"><span style="color: #0000ff">class</span> <span style="color: #2b91af">Array</span>
+  <span style="color: #0000ff">def</span> watch!(code)
+    self.each <span style="color: #0000ff">do</span> |n|
+      code.call(n)
+     <span style="color: #0000ff">end</span>
+   <span style="color: #0000ff">end</span>
+ <span style="color: #0000ff">end</span>
+ array = [<span style="color: #a31515">&quot;ruby&quot;</span>, <span style="color: #a31515">&quot;javascript&quot;</span>, <span style="color: #a31515">&quot;python&quot;</span>, <span style="color: #a31515">&quot;lisp&quot;</span>]
+ string = Proc.new <span style="color: #0000ff">do</span> |n|
+   puts <span style="color: #a31515">&quot;Hi, my name is #{</span>n<span style="color: #a31515">}!&quot;</span>
+ <span style="color: #0000ff">end</span>
+array.watch!(string)
+<span style="color: #008000">#Hi, my name is ruby!</span>
+<span style="color: #008000">#Hi, my name is javascript!</span>
+<span style="color: #008000">#Hi, my name is python!</span>
+<span style="color: #008000">#Hi, my name is lisp!</span>
+</pre></div>
+    </p>
+    <h4>Lambdas</h4>
+    <p>
+      Lambdas are very similar to Procs, in that they are code blocks that methods can call that are outside of the method. Lambdas also are not named. Well, they are, but they're all named lambda. You can't create a lambda named "string" and call it like we did in the example above. Lambdas are created like Procs, but they act more like unnamed methods. If you include a 'return' in your lambda, the lambda will accept that and then go right back to the method that called the lambda; the Proc, however, will throw an error message. Here is an example of a comparison of a Proc and a lambda:
+      <!-- HTML generated using hilite.me --><div style="background: #ffffff; overflow:auto;width:auto;border:solid gray;border-width:.1em .1em .1em .8em;padding:.2em .6em; margin: 0px 250px 0px 250px;"><pre style="margin: 0; line-height: 125%"><span style="color: #0000ff">def</span> hello(code)
+  code.call
+  <span style="color: #0000ff">return</span> <span style="color: #a31515">&quot;later!&quot;</span>
+<span style="color: #0000ff">end</span>
+
+p hello(Proc.new {<span style="color: #0000ff">return</span> <span style="color: #a31515">&quot;Proc.new says hello!&quot;</span>})
+p hello(lambda {<span style="color: #0000ff">return</span> <span style="color: #a31515">&quot;lambda says hello!&quot;</span>})
+
+<span style="color: #008000">#LocalJumpError: unexpected return</span>
+<span style="color: #008000">#&quot;later!&quot;</span>
+</pre></div>
+
+    </p>
+    <p>
+      If you used a "puts" instead of a return, the code would also return "lambda says hello!"
+    </p>
+    <p>
+      Lambdas are also more picky than Procs when it comes to method arguments. Procs will run regardless of the number of arguments, while lambdas will make a big deal out of not having the correct number of arguments. Here is an example:
+      <!-- HTML generated using hilite.me --><div style="background: #ffffff; overflow:auto;width:auto;border:solid gray;border-width:.1em .1em .1em .8em;padding:.2em .6em; margin: 0px 250px 0px 250px;"><pre style="margin: 0; line-height: 125%"><span style="color: #0000ff">def</span> hello(code)
+  one = 1
+  two = 2
+  code.call(one, two)
+<span style="color: #0000ff">end</span>
+p hello(Proc.new {|a, b, c| puts <span style="color: #a31515">&quot;In my method I have #{</span>a<span style="color: #a31515">}, #{</span>b<span style="color: #a31515">}, and #{</span>c<span style="color: #a31515">}&quot;</span>})
+<span style="color: #008000">#In my method I have 1, 2, and </span>
+<span style="color: #0000ff">nil</span>
+p hello(lambda {|a, b, c| puts <span style="color: #a31515">&quot;In my method I have #{</span>a<span style="color: #a31515">}, #{</span>b<span style="color: #a31515">}, and #{</span>c<span style="color: #a31515">}&quot;</span>})
+<span style="color: #008000">#ArgumentError: wrong number of arguments (2 for 3)</span>
+</pre></div>
+
+    </p>
+
+
+  </section>
+
+  <table>
+    <tr>
+      <td>
+        <a href="http://rebeccacaroline.github.io/blog/t5-ruby-classes.html">Earlier</a>
+      </td>
+      <td>
+        <a href="http://rebeccacaroline.github.io/blog/index.html">Blog Home</a>
+      </td>
+      <td>
+        <a href="#">Later</a>
+      </td>
+    </tr>
+  </table>
+
+</body>
+</html>
+
