@@ -17,15 +17,18 @@
   <section>
     <h4>Blocks</h4>
     <p>
-      Blocks are sets code that we have used during this course. A set of things that Ruby is assigned to do is called a block. Blocks either start and end with curly braces ({}), or with a do and an end. Here is an example of a block:
-      <!-- HTML generated using hilite.me --><div style="background: #ffffff; overflow:auto;width:auto;border:solid gray;border-width:.1em .1em .1em .8em;padding:.2em .6em; margin: 0px 250px 0px 250px;"><pre style="margin: 0; line-height: 125%">array = [<span style="color: #a31515">&quot;ruby&quot;</span>, <span style="color: #a31515">&quot;javascript&quot;</span>, <span style="color: #a31515">&quot;python&quot;</span>, <span style="color: #a31515">&quot;lisp&quot;</span>]</div>
+      Blocks are sets of code that we have used during this course. A set of things that Ruby is assigned to do is called a block. Blocks either start and end with curly braces ({}), or with a do and an end. Here is an example of a block:
+      <!-- HTML generated using hilite.me --><div style="background: #ffffff; overflow:auto;width:auto;border:solid gray;border-width:.1em .1em .1em .8em;padding:.2em .6em; margin: 0px 250px 0px 250px;"><pre style="margin: 0; line-height: 125%">array = [<span style="color: #a31515">&quot;ruby&quot;</span>, <span style="color: #a31515">&quot;javascript&quot;</span>, <span style="color: #a31515">&quot;python&quot;</span>, <span style="color: #a31515">&quot;lisp&quot;</span>]
+
+array.each {|lang| puts lang}
+</pre></div>
     </p>
     <p>
       The block part of that code was the code inside the curly braces - it is what is telling Ruby what to do.
     </p>
     <h4>Procs</h4>
     <p>
-      Proc is short for procedure. A proc is a block stored in a variable, to be used multiple times. The reason one would use a proc is to be able to reuse a block. Procs are their own class, so when you create one you would use the syntax new_proc = Proc.new. Here is an example of a new creation of a proc:
+      Proc is short for procedure. A Proc is a block stored in a variable, to be used multiple times. The reason one would use a Proc is to be able to reuse a block. Procs are their own class, so when you create one you would use the syntax new_proc = Proc.new. Here is an example of a new creation of a Proc:
       <!-- HTML generated using hilite.me --><div style="background: #ffffff; overflow:auto;width:auto;border:solid gray;border-width:.1em .1em .1em .8em;padding:.2em .6em; margin: 0px 250px 0px 250px;"><pre style="margin: 0; line-height: 125%">string = Proc.new <span style="color: #0000ff">do</span> |n|
   puts <span style="color: #a31515">&quot;Hi, my name is #{</span>n<span style="color: #a31515">}!&quot;</span>
 <span style="color: #0000ff">end</span>
@@ -92,13 +95,13 @@ p hello(lambda {|a, b, c| puts <span style="color: #a31515">&quot;In my method I
   <table>
     <tr>
       <td>
-        <a href="http://rebeccacaroline.github.io/blog/t5-ruby-classes.html">Earlier</a>
+        <a href="t5-ruby-classes.html">Earlier</a>
       </td>
       <td>
         <a href="../index.html">Home</a>
       </td>
       <td>
-        <a href="http://rebeccacaroline.github.io/blog/t7-JavaScript.html">Later</a>
+        <a href="t7-JavaScript.html">Later</a>
       </td>
     </tr>
   </table>
