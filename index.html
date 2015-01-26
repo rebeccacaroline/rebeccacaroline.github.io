@@ -3,6 +3,10 @@
 <head>
   <link rel="stylesheet" type="text.css" href="stylesheets/default.css" >
   <meta charset="UTF-8">
+  <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+  <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
   <title>rebeccacaroline.github.io</title>
   <link href='http://fonts.googleapis.com/css?family=Lobster|Open+Sans+Condensed:300' rel='stylesheet' type='text/css'>
 </head>
@@ -10,19 +14,56 @@
 <body>
     <header id="title">Rebecca Holzschuh</header>
 
-
-    <div id="navbar">
-      <div class="places">
-        <a href="index.html">Home</a>
-      </div>
-      <div class="places">About Me</div>
-      <div class="places">
-        <a href="cheat-sheet.html">Projects</a>
-      </div>
-      <div class="places">
-        <a href="http://rebeccacaroline.github.io/blog/index.html">Blog</a>
-      </div>
+<nav class="navbar navbar-default">
+  <div class="container-fluid">
+    <!-- Brand and toggle get grouped for better mobile display -->
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+     <!--  <a class="navbar-brand" href="#">Brand</a> -->
     </div>
+
+    <!-- Collect the nav links, forms, and other content for toggling -->
+    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+      <ul class="nav navbar-nav navbar-right">
+        <li><a href="rebeccacaroline.github.io">Home <span class="sr-only">(current)</span></a></li>
+        <li class="dropdown">
+          <a href= "#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Projects <span class="caret"></span></a>
+          <ul class="dropdown-menu" role="menu">
+            <li><a href="https://github.com/rebeccacaroline">Github</a></li>
+            <li class="divider"></li>
+            <li><a href="cheatsheet.html">HTML & CSS Cheatsheet</a></li>
+          </ul>
+        <li class="dropdown">
+          <a class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Blog <span class="caret"></span></a>
+          <ul class="dropdown-menu" role="menu">
+            <li role="presentation" class="dropdown-header">Technical Blog</li>
+            <li><a href="blog/t1-git-blog.html">All About Git</a></li>
+            <li><a href="blog/t2-css-design.html">What's Your Position?</a></li>
+            <li><a href="blog/t3-arrays-hashes.html">A Rehash of Arrays</a></li>
+            <li><a href="#">Grouping Method</a></li>
+            <li><a href="#">Keepin' It Classy</a></li>
+            <li><a href="#">Blocks and Procs and All Those Ruby Things</a></li>
+            <li><a href="#">Class v. Constructor</a></li>
+            <li><a href="#">Static v. Dynamic</a></li>
+            <li role="presentation" class="dropdown-header">Cultural Blog</li>
+            <li><a href="#">Cooking with Chefs</a></li>
+            <li><a href="#">Using My Brain</a></li>
+            <li><a href="#">The LCD Ceiling</a></li>
+            <li><a href="#">L'enfer, c'est les autres?</a></li>
+            <li><a href="#">Stereotype Threat</a></li>
+            <li><a href="#">Values and Stereotype Threat</a></li>
+            <li><a href="#">The Case of the Missing Credit Card</a></li>
+          </ul>
+        </li>
+      </ul>
+    </div><!-- /.navbar-collapse -->
+  </div><!-- /.container-fluid -->
+</nav>
 
     <div id="body_area" class="clearfix">
       <img id="me" src="http://i.imgur.com/wkbYtwJ.jpg" alt="myself"/>
