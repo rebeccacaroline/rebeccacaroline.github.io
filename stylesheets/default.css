@@ -66,16 +66,15 @@ nav {
   font-size: 18px;
 }
 
-
 li[role="presentation"] {
-  font-size: 2em;
+  font-size: 20px;
   color: #000056;
 }
 
 
 #body_area {
   position: relative;
-  margin: auto;
+  margin: 10% 15% 10% 15%;
   width: 800px;
 }
 
@@ -129,7 +128,7 @@ h4 {
 li {
   font-family: Open Sans Condensed;
   color: #000056;
-  font-size: 1.25em;
+  font-size: 1.15em;
 }
 
 h1 {
@@ -182,7 +181,7 @@ header {
 }
 
 footer {
-  margin: 9% 40% 2% 40%;
+  margin: 10% 40% 2% 40%;
 }
 
 #bottom{
@@ -193,6 +192,3 @@ footer {
   overflow: auto;
 }
 
-.jumbotron {
-  color: #E6F2FF,
-}
