@@ -51,3 +51,12 @@ p {
 .title {
   font-size: 2em;
 }
+
+.logo {
+  height: 35px;
+  width: 35px;
+}
+
+.contact-info {
+  margin-top: 5%;
+}
