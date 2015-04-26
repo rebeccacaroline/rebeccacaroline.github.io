@@ -17,14 +17,22 @@ body {
   padding-top: 10px;
 }
 
-/*.fusion {
-  height: 550px;
+#mountain {
+  background: transparent;
+  min-height: 400px;
+  height: 1100px;
+  padding-top: 10px;
+}
+
+.fusion {
+  height: 100px;
   width: 100%;
-  -webkit-box-shadow: -1px 0px 15px 9px rgba(0,0,0,0.8);
+ /* -webkit-box-shadow: -1px 0px 15px 9px rgba(0,0,0,0.8);
   -moz-box-shadow: -1px 0px 15px 9px rgba(0,0,0,0.8);
-  box-shadow: -1px 0px 15px 9px rgba(0,0,0,0.8);
-  background-color: black;
-}*/
+  box-shadow: -1px 0px 15px 9px rgba(0,0,0,0.8);*/
+/*  background-color: blue;*/
+  background: url('./imgs/concrete_seamless.png') no-repeat center center fixed;
+}
 
 /*.inner-fusion {
   margin: 0 auto;
@@ -38,9 +46,6 @@ body {
 header {
   text-align: center;
   margin-top: 25%;
-}
-
-p {
   color: #FFFFFF;
 }
 
@@ -59,4 +64,30 @@ p {
 
 .contact-info {
   margin-top: 5%;
+}
+
+.arrow {
+  height: 75px;
+  width: 75px;
+  margin-top: 17%;
+}
+
+.lifetime {
+  font-family: Quicksand;
+  font-size: 2em;
+  padding-top: 15%;
+  padding-bottom: 15%;
+}
+
+.explanation {
+  font-size: 1em;
+  background-color: rgba(0,0,0,0.5);
+  color: white;
+  padding-top: 5%;
+  padding-bottom: 5%;
+}
+
+a {
+  text-decoration: none;
+  color: black;
 }
