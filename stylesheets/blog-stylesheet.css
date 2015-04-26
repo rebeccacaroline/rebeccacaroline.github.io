@@ -11,13 +11,13 @@ p {
   margin-right: 250px;
 }
 
-li {
+/*li {
   display: block;
   float: center;
   padding: 5px;
   margin-left: 250px;
   margin-right: 250px;
-}
+}*/
 
 td {
   text-align: center;
@@ -30,6 +30,3 @@ img {
  width: 105%;
 }
 
-.head {
-
-}
