@@ -82,33 +82,32 @@ header {
 }
 
 .projects {
-  display: block;
-
+  /*margin-left: 25%;*/
 }
 
 .project {
   font-size: 1.5em;
   padding-top: 5%;
-  padding-bottom: 35%;
+  /*padding-bottom: 35%;*/
   margin-top: 5%;
-  width: 35%;
-  height: 25%;
+  width: 45%;
+  height: 250px;
   border: 1px solid black;
-  /*position: relative;*/
-
+  /*position: absolute;*/
+  /*margin-left: auto;*/
+/*  margin-right: auto;*/
 }
 
 .lifetime {
   font-family: Quicksand;
   background: url(../imgs/running.jpg);
-  /*float: center;*/
+  margin-right: 2%;
 }
 
 .whosaysdrewsays {
   font-family: Open Sans Condensed;
   background: url(http://www.hdwallpaperscool.com/wp-content/uploads/2014/09/road-and-cloudy-blue-sky-new-desktop-wallpapers-in-high-resolution-fullscreen.jpg) no-repeat center center fixed;
-  margin-right: -25%;
-  /*float: right;*/
+  margin-left: 2%;
 }
 
 .wsdstitle {
