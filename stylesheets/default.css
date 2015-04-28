@@ -15,17 +15,19 @@ body {
   min-height: 400px;
   height: 1100px;
   padding-top: 10px;
+  width: 100%;
 }
 
-#mountain {
+.mountain {
   background: transparent;
   min-height: 400px;
   height: 1100px;
   padding-top: 10px;
+  width: 100%;
 }
 
 .fusion {
-  height: 500px;
+  height: 600px;
   width: 100%;
   /*-webkit-box-shadow: 1px 1px 15px 9px rgba(0,0,0,0.8);
   -moz-box-shadow: 1px 1px 15px 9px rgba(0,0,0,0.8);
@@ -80,26 +82,37 @@ header {
 }
 
 .projects {
-  display: inline;
+  display: block;
+
 }
 
 .project {
-  font-size: 2em;
-  padding-top: 15%;
-  padding-bottom: 15%;
+  font-size: 1.5em;
+  padding-top: 5%;
+  padding-bottom: 35%;
   margin-top: 5%;
-  width: 25%;
+  width: 35%;
+  height: 25%;
   border: 1px solid black;
+  /*position: relative;*/
+
 }
 
 .lifetime {
   font-family: Quicksand;
   background: url(../imgs/running.jpg);
+  /*float: center;*/
 }
 
 .whosaysdrewsays {
   font-family: Open Sans Condensed;
   background: url(http://www.hdwallpaperscool.com/wp-content/uploads/2014/09/road-and-cloudy-blue-sky-new-desktop-wallpapers-in-high-resolution-fullscreen.jpg) no-repeat center center fixed;
+  margin-right: -25%;
+  /*float: right;*/
+}
+
+.wsdstitle {
+  margin-top: -15px;
 }
 
 .explanation {
