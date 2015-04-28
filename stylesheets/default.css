@@ -25,13 +25,19 @@ body {
 }
 
 .fusion {
-  height: 100px;
+  height: 500px;
   width: 100%;
- /* -webkit-box-shadow: -1px 0px 15px 9px rgba(0,0,0,0.8);
-  -moz-box-shadow: -1px 0px 15px 9px rgba(0,0,0,0.8);
-  box-shadow: -1px 0px 15px 9px rgba(0,0,0,0.8);*/
-/*  background-color: blue;*/
-  background: url('./imgs/concrete_seamless.png') no-repeat center center fixed;
+  /*-webkit-box-shadow: 1px 1px 15px 9px rgba(0,0,0,0.8);
+  -moz-box-shadow: 1px 1px 15px 9px rgba(0,0,0,0.8);
+  box-shadow: 1px 1px 15px 9px rgba(0,0,0,0.8);*/
+  /*background-color: blue;*/
+}
+
+.valley {
+  background: transparent;
+  min-height: 400px;
+  height: 1100px;
+  padding-top: 10px;
 }
 
 /*.inner-fusion {
@@ -55,6 +61,7 @@ header {
 
 .title {
   font-size: 2em;
+  margin-bottom: 5%;
 }
 
 .logo {
@@ -72,11 +79,27 @@ header {
   margin-top: 17%;
 }
 
-.lifetime {
-  font-family: Quicksand;
+.projects {
+  display: inline;
+}
+
+.project {
   font-size: 2em;
   padding-top: 15%;
   padding-bottom: 15%;
+  margin-top: 5%;
+  width: 25%;
+  border: 1px solid black;
+}
+
+.lifetime {
+  font-family: Quicksand;
+  background: url(../imgs/running.jpg);
+}
+
+.whosaysdrewsays {
+  font-family: Open Sans Condensed;
+  background: url(http://www.hdwallpaperscool.com/wp-content/uploads/2014/09/road-and-cloudy-blue-sky-new-desktop-wallpapers-in-high-resolution-fullscreen.jpg) no-repeat center center fixed;
 }
 
 .explanation {
@@ -95,3 +118,12 @@ a {
 .wide {
   width: 75px;
 }
+
+.fusion-title{
+  padding-top: 3%;
+  font-size: 2em;
+}
+
+
+
+
