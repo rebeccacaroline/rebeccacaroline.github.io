@@ -1,8 +1,9 @@
 <!DOCTYPE HTML>
 <html>
 <head>
-  <link rel="stylesheet" type="text.css" href="stylesheets/skeleton.css" >
   <link rel="stylesheet" type="text.css" href="stylesheets/normalize.css" >
+  <link rel="stylesheet" type="text.css" href="stylesheets/skeleton.css" >
+
   <link rel="stylesheet" type="text.css" href="stylesheets/default.css" >
 
   <meta charset="UTF-8">
@@ -13,11 +14,22 @@
   <title>Rebecca Holzschuh</title>
   <link href='http://fonts.googleapis.com/css?family=Lobster|Open+Sans+Condensed:300' rel='stylesheet' type='text/css'>
   <link href='http://fonts.googleapis.com/css?family=Quicksand' rel='stylesheet' type='text/css'>
+  <script src="https://cdn.localizejs.com/localize.js"></script>
+<script>!function(a){if(!a.Localize){a.Localize={};for(var e=["translate","untranslate","phrase","initialize","translatePage","setLanguage","getLanguage","detectLanguage","untranslatePage","bootstrap","prefetch","on","off"],t=0;t<e.length;t++)a.Localize[e[t]]=function(){}}}(window);</script>
+
+<script>
+  Localize.initialize({
+    key: 'XqGIfcri2eM3i',
+    rememberLanguage: true,
+    saveNewPhrases: true,
+    translateBody: true
+  });
+</script>
 </head>
 
 <body>
 
-  <div class="parallax">
+  <div class="twelve columns parallax">
     <div class="main parallax-window" data-image-src="imgs/world_map.png" data-parallax="scroll">
       <header class="twelve columns">
         <p class="name">Rebecca Holzschuh</p>
@@ -31,12 +43,12 @@
     </div>
     <div class="fusion" data-image-src="imgs/concrete_seamless.png" data-parallax="scroll">
       <p class='fusion-title'>Projects</p>
-      <div class="projects">
-        <div class="lifetime four columns project">
+      <div class="ten columns projects">
+        <div class="lifetime project four offset-by-three columns">
           <p>LifeTime</p>
         </div>
-        <div class="whosaysdrewsays four columns project">
-          <p>Who Says? Drew Says!</p>
+        <div class="whosaysdrewsays project four columns">
+          <p class="wsds-title">Who Says? Drew Says!</p>
         </div>
       </div>
     </div>
@@ -49,6 +61,7 @@
 
     </div> -->
   </div>
+<!-- <a onclick="Localize.setLanguage('fr')">Translate to French</a> -->
 </body>
 
 </html>

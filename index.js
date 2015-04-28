@@ -1,5 +1,6 @@
 $(document).ready(function(){
   logoShadow();
+  Localize.setLanguage('fr');
 });
 
 var logoShadow = function(){
