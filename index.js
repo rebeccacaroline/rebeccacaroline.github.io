@@ -1,6 +1,8 @@
 $(document).ready(function(){
   logoShadow();
-  Localize.setLanguage('fr');
+  Localize.setLanguage('en');
+  lifeTimeLink();
+  whoSaysDrewSaysLink();
 });
 
 var logoShadow = function(){
@@ -12,6 +14,22 @@ var logoShadow = function(){
 };
 
 
-$('.arrow').on('click', function(){
-    $('html, body').animate({scrollTop: $('')})
-  })
+// $('.arrow').on('click', function(){
+//     $('html, body').animate({scrollTop: $('')})
+//   })
+
+var lifeTimeLink = function(){
+  $('.lifetime').on('click', function(){
+    window.location = $(this).find("a").attr("href");
+    return false;
+  });
+};
+
+var whoSaysDrewSaysLink = function(){
+  $('.whosaysdrewsays').on('click', function(){
+    window.location = $(this).find("a").attr("href");
+    return false;
+  });
+};
+
+

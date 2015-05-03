@@ -83,6 +83,8 @@ header {
 
 .projects {
   /*margin-left: 25%;*/
+  display: flex;
+  justify-content: center;
 }
 
 .project {
@@ -107,6 +109,7 @@ header {
 .whosaysdrewsays {
   font-family: Open Sans Condensed;
   background: url(http://www.hdwallpaperscool.com/wp-content/uploads/2014/09/road-and-cloudy-blue-sky-new-desktop-wallpapers-in-high-resolution-fullscreen.jpg) no-repeat center center fixed;
+  background-size: cover;
   margin-left: 2%;
 }
 
