@@ -1,6 +1,8 @@
-body {
-  /*background: url('../imgs/world_map.png') no-repeat center center fixed;*/
+* {
+  -moz-box-sizing: border-box;
+}
 
+body {
   font-family: Lobster;
 }
 
@@ -29,10 +31,6 @@ body {
 .fusion {
   height: 600px;
   width: 100%;
-  /*-webkit-box-shadow: 1px 1px 15px 9px rgba(0,0,0,0.8);
-  -moz-box-shadow: 1px 1px 15px 9px rgba(0,0,0,0.8);
-  box-shadow: 1px 1px 15px 9px rgba(0,0,0,0.8);*/
-  /*background-color: blue;*/
 }
 
 .valley {
@@ -139,6 +137,42 @@ a {
   font-size: 2em;
 }
 
+.flip-container {
+  perspective: 1000;
+  width: 45%;
+  height: 250px;
+}
+
+.flip-container:hover .flipper, .flip-container.hover .flipper {
+  transform: rotateY(180deg);
+}
+
+/*.flip-container, .front, .back {
+  width: 45%;
+  height: 250px;
+}
+*/
+.flipper {
+  transition: 0.6s;
+  transform-style: preserve-3d;
+  /*position: relative;*/
+}
+
+.front, .back {
+  backface-visibility: hidden;
+  /*position: absolute;*/
+  top: 0;
+  left: 0;
+}
+
+.front {
+  z-index: 2;
+  transform: rotateY(0deg);
+}
+
+.back {
+  transform: rotateY(180deg);
+}
 
 
 
