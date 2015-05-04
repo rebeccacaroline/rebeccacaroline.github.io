@@ -103,6 +103,7 @@ header {
   background: url(http://www.hdwallpaperscool.com/wp-content/uploads/2014/09/road-and-cloudy-blue-sky-new-desktop-wallpapers-in-high-resolution-fullscreen.jpg) no-repeat center center fixed;
   background-size: cover;
   margin-left: 2%;
+  color: #FFFF99;
 }
 
 .wsdstitle {
@@ -110,12 +111,16 @@ header {
 }
 
 .explanation {
-  font-size: 0.5em;
-  /*background-color: rgba(0,0,0,0.5);*/
-  /*color: white;*/
-  padding-top: 5%;
-  padding-bottom: 5%;
+  font-size: 0.6em;
+  margin-top: -15%;
 }
+
+.explanationz {
+  margin-top: -15%;
+  font-size: 0.75em;
+  color: #FFFF99;
+}
+
 
 .projectz {
   background-color: rgba(0,0,0,0.5);
