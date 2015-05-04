@@ -1,6 +1,8 @@
-body {
-  /*background: url('../imgs/world_map.png') no-repeat center center fixed;*/
+* {
+  -moz-box-sizing: border-box;
+}
 
+body {
   font-family: Lobster;
 }
 
@@ -29,10 +31,6 @@ body {
 .fusion {
   height: 600px;
   width: 100%;
-  /*-webkit-box-shadow: 1px 1px 15px 9px rgba(0,0,0,0.8);
-  -moz-box-shadow: 1px 1px 15px 9px rgba(0,0,0,0.8);
-  box-shadow: 1px 1px 15px 9px rgba(0,0,0,0.8);*/
-  /*background-color: blue;*/
 }
 
 .valley {
@@ -82,7 +80,6 @@ header {
 }
 
 .projects {
-  /*margin-left: 25%;*/
   display: flex;
   justify-content: center;
 }
@@ -90,14 +87,9 @@ header {
 .project {
   font-size: 1.5em;
   padding-top: 5%;
-  /*padding-bottom: 35%;*/
   margin-top: 5%;
-  width: 45%;
   height: 250px;
   border: 1px solid black;
-  /*position: absolute;*/
-  /*margin-left: auto;*/
-/*  margin-right: auto;*/
 }
 
 .lifetime {
@@ -111,6 +103,7 @@ header {
   background: url(http://www.hdwallpaperscool.com/wp-content/uploads/2014/09/road-and-cloudy-blue-sky-new-desktop-wallpapers-in-high-resolution-fullscreen.jpg) no-repeat center center fixed;
   background-size: cover;
   margin-left: 2%;
+  color: #FFFF99;
 }
 
 .wsdstitle {
@@ -118,11 +111,19 @@ header {
 }
 
 .explanation {
-  font-size: 1em;
+  font-size: 0.6em;
+  margin-top: -15%;
+}
+
+.explanationz {
+  margin-top: -15%;
+  font-size: 0.75em;
+  color: #FFFF99;
+}
+
+
+.projectz {
   background-color: rgba(0,0,0,0.5);
-  color: white;
-  padding-top: 5%;
-  padding-bottom: 5%;
 }
 
 a {
@@ -139,6 +140,40 @@ a {
   font-size: 2em;
 }
 
+.flip-container {
+  perspective: 1000;
+  width: 250px;
+  height: 250px;
+}
+
+.flip-container:hover .flipper, .flip-container.hover .flipper {
+  transform: rotateY(180deg);
+}
+
+/*.flip-container, .front, .back {
+  width: 320px;
+  height: 480px;
+}*/
+
+.flipper {
+  transition: 0.6s;
+  transform-style: preserve-3d;
+}
+
+.front, .back {
+  backface-visibility: hidden;
+  top: 0;
+  left: 0;
+}
+
+.front {
+  z-index: 2;
+  transform: rotateY(0deg);
+}
+
+.back {
+  transform: rotateY(180deg);
+}
 
 
 
