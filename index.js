@@ -3,6 +3,7 @@ $(document).ready(function(){
   Localize.setLanguage('en');
   lifeTimeLink();
   whoSaysDrewSaysLink();
+  flipDiv();
 });
 
 var logoShadow = function(){
@@ -13,10 +14,6 @@ var logoShadow = function(){
   })
 };
 
-
-// $('.arrow').on('click', function(){
-//     $('html, body').animate({scrollTop: $('')})
-//   })
 
 var lifeTimeLink = function(){
   $('.lifetime').on('click', function(){
@@ -32,4 +29,11 @@ var whoSaysDrewSaysLink = function(){
   });
 };
 
+var flipDiv = function(){
+  $('.hover').hover(function(){
+    $(this).addClass('flip');
+  }, function(){
+    $(this).removeClass('flip');
+  });
+}
 
