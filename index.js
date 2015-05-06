@@ -1,8 +1,8 @@
 $(document).ready(function(){
   logoShadow();
   Localize.setLanguage('en');
-  lifeTimeLink();
-  whoSaysDrewSaysLink();
+  projectLink();
+  // whoSaysDrewSaysLink();
   flipDiv();
   downArrow();
 });
@@ -21,19 +21,19 @@ var downArrow = function(){
   });
 };
 
-var lifeTimeLink = function(){
-  $('.lifetime').on('click', function(){
+var projectLink = function(){
+  $('.flip-container').on('click', function(){
     window.location = $(this).find("a").attr("href");
     return false;
   });
 };
 
-var whoSaysDrewSaysLink = function(){
-  $('.whosaysdrewsays').on('click', function(){
-    window.location = $(this).find("a").attr("href");
-    return false;
-  });
-};
+// var whoSaysDrewSaysLink = function(){
+//   $('.whosaysdrewsays').on('click', function(){
+//     window.location = $(this).find("a").attr("href");
+//     return false;
+//   });
+// };
 
 var flipDiv = function(){
   $('.hover').hover(function(){
