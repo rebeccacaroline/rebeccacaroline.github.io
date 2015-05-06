@@ -4,6 +4,7 @@ $(document).ready(function(){
   lifeTimeLink();
   whoSaysDrewSaysLink();
   flipDiv();
+  downArrow();
 });
 
 var logoShadow = function(){
@@ -14,6 +15,11 @@ var logoShadow = function(){
   })
 };
 
+var downArrow = function(){
+  $('.arrow').on('click', function(){
+    $('html,body').animate({scrollTop: $('.fusion').offset().top}, 7000);
+  });
+};
 
 var lifeTimeLink = function(){
   $('.lifetime').on('click', function(){

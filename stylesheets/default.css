@@ -97,7 +97,7 @@ header {
 
 .whosaysdrewsays {
   font-family: Open Sans Condensed;
-  background: url(../imgs/sky.jpg) no-repeat center center fixed;
+  background: url(../imgs/sky.jpg);
   background-size: cover;
   color: #FFFF99;
 }
