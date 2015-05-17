@@ -41,5 +41,7 @@ var flipDiv = function(){
   }, function(){
     $(this).removeClass('flip');
   });
+
+
 }
 
