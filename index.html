@@ -8,8 +8,11 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.3.15/angular.min.js"></script>
   <script src='parallax.js'></script>
   <script src='index.js'></script>
+  <script src='skills.js'></script>
+  <script src="SkillsController.js"></script>
   <title>Rebecca Holzschuh</title>
   <link href='http://fonts.googleapis.com/css?family=Lobster|Open+Sans+Condensed:300' rel='stylesheet' type='text/css'>
   <link href='http://fonts.googleapis.com/css?family=Quicksand' rel='stylesheet' type='text/css'>
@@ -26,7 +29,7 @@
 </script>
 </head>
 
-<body>
+<body ng-app="RebeccaApp">
 
   <div class="twelve columns parallax">
     <div class="main parallax-window" data-image-src="imgs/world_map.png" data-parallax="scroll">
@@ -86,6 +89,17 @@
         </div>
       </div>
     </div>
+
+    <div class="valley parallax-window" data-image-src="imgs/vintage_cig_paper.jpg" data-parallax="scroll" ng-controller="SkillsController">
+      <h3>Skills</h3>
+      <div >
+        <div class="four columns skillies" ng-repeat="skill in skills">
+          <p class='skillz'>{{skill.name}}</p>
+          <img class='skill-logoz' ng-src='{{skill.icon}}' />
+        </div>
+      </div>
+    </div>
+
     <div class="mountain parallax-window" data-image-src="imgs/bridge.jpg" data-parallax="scroll">
       <p class='contact'>Contact</p>
       <a href='mailto:rebeccaholzschuh@gmail.com'><img src="imgs/gmail.png" alt="gmail" class="contactz"/></a>
@@ -103,6 +117,8 @@
     </div> -->
   </div>
 <!-- <a onclick="Localize.setLanguage('fr')">Translate to French</a> -->
+
+
 </body>
 
 </html>
