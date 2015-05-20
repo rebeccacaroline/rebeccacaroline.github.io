@@ -4,6 +4,7 @@
 
 body {
   font-family: Lobster;
+  color: #191919;
 }
 
 .parallax {
@@ -36,7 +37,7 @@ body {
 .valley {
   background: transparent;
   min-height: 400px;
-  height: 1100px;
+  height: 500px;
   padding-top: 10px;
 }
 
@@ -184,6 +185,31 @@ header {
   -moz-border-radius: 5px;
   -webkit-border-radius: 5px;
 }
+
+.skillies {
+  display: inline-block;
+  margin-left: 5%;
+}
+
+.skillz {
+  font-size: 1.5em;
+  font-family: Cabin;
+}
+
+img.skill-logoz {
+  height: 50px;
+  width: 50px;
+}
+
+@media (max-width: 550px){
+  .valley {
+    height: 1300px;
+  }
+  .skillies {
+    margin-left: 0;
+  }
+}
+
 .contact {
   margin-top: 5%;
   font-size: 2.5em;
