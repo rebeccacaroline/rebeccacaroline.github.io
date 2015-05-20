@@ -4,6 +4,7 @@
 
 body {
   font-family: Lobster;
+  color: #191919;
 }
 
 .parallax {
@@ -191,7 +192,7 @@ header {
 
 .skillz {
   font-size: 1.5em;
-  font-family: Helvetica;
+  font-family: Cabin;
 }
 
 img.skill-logoz {

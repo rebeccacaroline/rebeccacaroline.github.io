@@ -35,6 +35,10 @@ app.controller("SkillsController", function($scope){
       {
         name: 'Angular',
         icon: 'imgs/angular.png'
+      },
+      {
+        name: 'Git',
+        icon: 'imgs/git.png'
       }
     ];
 });

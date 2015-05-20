@@ -16,6 +16,7 @@
   <title>Rebecca Holzschuh</title>
   <link href='http://fonts.googleapis.com/css?family=Lobster|Open+Sans+Condensed:300' rel='stylesheet' type='text/css'>
   <link href='http://fonts.googleapis.com/css?family=Quicksand' rel='stylesheet' type='text/css'>
+  <link href='http://fonts.googleapis.com/css?family=Cabin' rel='stylesheet' type='text/css'>
   <script src="https://cdn.localizejs.com/localize.js"></script>
 <script>!function(a){if(!a.Localize){a.Localize={};for(var e=["translate","untranslate","phrase","initialize","translatePage","setLanguage","getLanguage","detectLanguage","untranslatePage","bootstrap","prefetch","on","off"],t=0;t<e.length;t++)a.Localize[e[t]]=function(){}}}(window);</script>
 
@@ -36,7 +37,6 @@
       <header class="twelve columns">
         <p class="name">Rebecca Holzschuh</p>
         <p class="title"> Full Stack Developer | Putting World Wide in the Web </p>
-        <a href='resume.html'>Resume</a>
       </header>
 
       <div class="contact-info">
@@ -92,11 +92,9 @@
 
     <div class="valley parallax-window" data-image-src="imgs/vintage_cig_paper.jpg" data-parallax="scroll" ng-controller="SkillsController">
       <h3>Skills</h3>
-      <div >
-        <div class="four columns skillies" ng-repeat="skill in skills">
-          <p class='skillz'>{{skill.name}}</p>
-          <img class='skill-logoz' ng-src='{{skill.icon}}' />
-        </div>
+      <div class="two columns skillies" ng-repeat="skill in skills">
+        <p class='skillz'>{{skill.name}}</p>
+        <img class='skill-logoz' ng-src='{{skill.icon}}' />
       </div>
     </div>
 
