@@ -37,7 +37,7 @@ body {
 .valley {
   background: transparent;
   min-height: 400px;
-  height: 800px;
+  height: 500px;
   padding-top: 10px;
 }
 
@@ -188,6 +188,7 @@ header {
 
 .skillies {
   display: inline-block;
+  margin-left: 5%;
 }
 
 .skillz {
@@ -199,6 +200,16 @@ img.skill-logoz {
   height: 50px;
   width: 50px;
 }
+
+@media (max-width: 550px){
+  .valley {
+    height: 1300px;
+  }
+  .skillies {
+    margin-left: 0;
+  }
+}
+
 .contact {
   margin-top: 5%;
   font-size: 2.5em;
