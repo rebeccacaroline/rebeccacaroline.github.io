@@ -96,10 +96,19 @@ header {
   background: url(../imgs/running.jpg);
 }
 
+.explanation {
+  font-size: 0.85em;
+}
+
 .whosaysdrewsays {
-  font-family: Open Sans Condensed;
   background: url(../imgs/sky.jpg);
   background-size: cover;
+  font-family: Open Sans Condensed;
+  color: #FFFF99;
+}
+
+.explanationz {
+  font-family: Open Sans Condensed;
   color: #FFFF99;
 }
 
@@ -207,6 +216,9 @@ img.skill-logoz {
   }
   .skillies {
     margin-left: 0;
+  }
+  .fusion {
+    height: 1000;
   }
 }
 
