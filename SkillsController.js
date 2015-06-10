@@ -5,19 +5,15 @@ app.controller("SkillsController", function($scope){
         icon: 'imgs/pgicon.png'
       },
       {
-        name: "Ruby",
-        icon: 'imgs/ruby-icon.png'
+        name: 'Sinatra',
+        icon: 'imgs/sinatra.png'
       },
       {
         name: "Rails",
         icon: 'imgs/rails.png'
       },
       {
-        name: 'JavaScript',
-        icon: 'imgs/javascript.png'
-      },
-      {
-        name: 'HTML5',
+       name: 'HTML5',
         icon: 'imgs/HTML5.png'
       },
       {
@@ -25,8 +21,12 @@ app.controller("SkillsController", function($scope){
         icon: 'imgs/css3.png'
       },
       {
-        name: 'Sinatra',
-        icon: 'imgs/sinatra.png'
+        name: "Node",
+        icon: "imgs/nodejs_circle.png"
+      },
+      {
+        name: "Backbone",
+        icon: "imgs/Backbone_logo.png"
       },
       {
         name: "jQuery",
