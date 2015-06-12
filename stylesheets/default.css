@@ -100,16 +100,16 @@ header {
   font-size: 0.85em;
 }
 
-.whosaysdrewsays {
-  background: url(../imgs/sky.jpg);
+.backbonelibrary {
+  background: url(../imgs/library.jpg);
   background-size: cover;
-  font-family: Open Sans Condensed;
-  color: #FFFF99;
+  font-family: Lora;
+  color: white;
 }
 
-.explanationz {
-  font-family: Open Sans Condensed;
-  color: #FFFF99;
+.lib-explanationz {
+  font-family: Lora;
+  color: white;
 }
 
 .flip-container {
@@ -236,3 +236,16 @@ img.skill-logoz {
   margin-top: 9%;
 }
 
+
+/*.whosaysdrewsays {
+  background: url(../imgs/sky.jpg);
+  background-size: cover;
+  font-family: Open Sans Condensed;
+  color: #FFFF99;
+}*/
+
+
+/*.explanationz {
+  font-family: Open Sans Condensed;
+  color: #FFFF99;
+}*/
