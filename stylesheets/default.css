@@ -142,10 +142,10 @@ header {
     -moz-transform-style: preserve-3d;
   -webkit-backface-visibility: hidden;
     -moz-backface-visibility: hidden;
-  -webkit-transition: all .4s ease-in-out;
-    -moz-transition: all .4s ease-in-out;
-      -o-transition: all .4s ease-in-out;
-        transition: all .4s ease-in-out;
+  -webkit-transition: all .6s ease-in-out;
+    -moz-transition: all .6s ease-in-out;
+      -o-transition: all .6s ease-in-out;
+        transition: all .6s ease-in-out;
 }
 
 .panel .back {
@@ -159,10 +159,10 @@ header {
     -moz-transform-style: preserve-3d;
   -webkit-backface-visibility: hidden;
     -moz-backface-visibilty: hidden;
-  -webkit-transition: all .4s ease-in-out;
-    -moz-transition: all .4s ease-in-out;
-      -o-transition: all .4s ease-in-out;
-        transition: all .4s ease-in-out;
+  -webkit-transition: all .6s ease-in-out;
+    -moz-transition: all .6s ease-in-out;
+      -o-transition: all .6s ease-in-out;
+        transition: all .6s ease-in-out;
 }
 
 .panel.flip .front {
