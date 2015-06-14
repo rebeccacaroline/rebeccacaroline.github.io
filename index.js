@@ -17,7 +17,7 @@ var logoShadow = function(){
 
 var downArrow = function(){
   $('.arrow').on('click', function(){
-    $('html,body').animate({scrollTop: $('.fusion').offset().top}, 7000);
+    $('html,body').animate({scrollTop: $('.fusion').offset().top}, 5000);
   });
 };
 
