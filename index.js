@@ -1,6 +1,6 @@
 $(document).ready(function(){
   logoShadow();
-  Localize.setLanguage('en');
+  // Localize.setLanguage('en');
   projectLink();
   // whoSaysDrewSaysLink();
   flipDiv();
