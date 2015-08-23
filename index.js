@@ -1,6 +1,7 @@
 $(document).ready(function(){
   logoShadow();
   // Localize.setLanguage('en');
+  githubLink();
   projectLink();
   // whoSaysDrewSaysLink();
   flipDiv();
@@ -18,6 +19,14 @@ var logoShadow = function(){
 var downArrow = function(){
   $('.arrow').on('click', function(){
     $('html,body').animate({scrollTop: $('.fusion').offset().top}, 5000);
+  });
+};
+
+var githubLink = function(){
+  $('.git').on('click', function(event){
+    event.preventDefault();
+    window.location = $(this).attr("href");
+    return false;
   });
 };
 
