@@ -5,8 +5,8 @@ app.controller("SkillsController", function($scope){
         icon: 'imgs/pgicon.png'
       },
       {
-        name: 'Sinatra',
-        icon: 'imgs/sinatra.png'
+        name: 'AWS',
+        icon: 'imgs/aws-logo.png'
       },
       {
         name: "Rails",

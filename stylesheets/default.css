@@ -92,9 +92,32 @@ header {
   justify-content: center;
 }
 
+.project-box {
+  height: 250px;
+  margin: 0 auto;
+  width: 25%;
+  padding: 20px;
+  border-radius: 5px;
+  -moz-border-radius: 5px;
+  -webkit-border-radius: 5px;
+}
+
+.meterhero {
+  font-family: Source Sans Pro;
+  font-weight: 300;
+  color: #6f787c;
+  background: url(http://redbeacon.s3.amazonaws.com/homeguides%2Farticles%2Fthumbs%2F5_light_bulb_replacement_safety_tips.jpg.600x275_q85_crop.jpg);
+}
+
+.meterhero img {
+  width: 50%;
+  margin-bottom: 3em;
+}
+
 .lifetime {
   font-family: Quicksand;
   background: url(../imgs/running.jpg);
+  height: 250px;
 }
 
 .explanation {
@@ -113,87 +136,28 @@ header {
   color: white;
 }
 
-.flip-container {
-  width: 100%;
-  hoverflow: hidden;
-  /*margin-top: 20px;*/
+.bottom {
+  display:none;
 }
 
-.panel {
-  height: 250px;
-  position: relative;
-  -webkit-perspective: 600px;
-  -moz-perspective: 600px;
+.project-box:hover .bottom {
+  display: block;
 }
 
-.panel .front, .panel .back {
-  text-align: center;
-  width: 100%;
-}
+@media (max-width: 580px){
+  .fusion {
+    height: 1100px;
+  }
+  .projects {
+    display: block;
+  }
+  .project-box {
+    width: 75%;
+    margin-top: 3%;
+    margin-bottom: 3%;
+    border: 1px solid #2E2E2E;
+  }
 
-.panel .front {
-  height: inherit;
-  position: absolute;
-  top: 0;
-  z-index: 900;
-  text-align: center;
-  -webkit-transform: rotateX(0deg) rotate&(0deg);
-    -moz-transform: rotateX(0deg) rotateY(0deg);
-  -webkit-transform-style: preserve-3d;
-    -moz-transform-style: preserve-3d;
-  -webkit-backface-visibility: hidden;
-    -moz-backface-visibility: hidden;
-  -webkit-transition: all .6s ease-in-out;
-    -moz-transition: all .6s ease-in-out;
-      -o-transition: all .6s ease-in-out;
-        transition: all .6s ease-in-out;
-}
-
-.panel .back {
-  height: inherit;
-  position: absolute;
-  top: 0;
-  z-index: 1000;
-  -webkit-transform: rotateY(-180deg);
-    -moz-transform: rotateY(-180deg);
-  -webkit-transform-style: preserve-3d;
-    -moz-transform-style: preserve-3d;
-  -webkit-backface-visibility: hidden;
-    -moz-backface-visibilty: hidden;
-  -webkit-transition: all .6s ease-in-out;
-    -moz-transition: all .6s ease-in-out;
-      -o-transition: all .6s ease-in-out;
-        transition: all .6s ease-in-out;
-}
-
-.panel.flip .front {
-  z-index: 900;
-  -webkit-transform: rotateY(180deg);
-  -moz-transform: rotateY(180deg);
-}
-
-.panel.flip .back {
-  z-index: 1000;
-  -webkit-transform: rotateX(0deg) rotateY(0deg);
-  -moz-transform: rotateX(0deg) rotateY(0deg);
-}
-
-.box1{
-  height: 250px;
-  margin: 0 auto;
-  padding: 20px;
-  border-radius: 5px;
-  -moz-border-radius: 5px;
-  -webkit-border-radius: 5px;
-}
-
-.box2{
-  height: 250px;
-  margin: 0 auto;
-  padding: 20px;
-  border-radius: 5px;
-  -moz-border-radius: 5px;
-  -webkit-border-radius: 5px;
 }
 
 .skillies {
@@ -218,9 +182,6 @@ img.skill-logoz {
   .skillies {
     margin-left: 0;
   }
-  .fusion {
-    height: 1000;
-  }
 }
 
 .contact {
@@ -236,17 +197,3 @@ img.skill-logoz {
   margin-right: 7px;
   margin-top: 9%;
 }
-
-
-/*.whosaysdrewsays {
-  background: url(../imgs/sky.jpg);
-  background-size: cover;
-  font-family: Open Sans Condensed;
-  color: #FFFF99;
-}*/
-
-
-/*.explanationz {
-  font-family: Open Sans Condensed;
-  color: #FFFF99;
-}*/

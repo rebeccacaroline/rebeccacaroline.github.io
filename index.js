@@ -31,8 +31,13 @@ var githubLink = function(){
 };
 
 var projectLink = function(){
-  $('.flip-container').on('click', function(){
-    window.location = $(this).find("a").attr("href");
+  $('.project-box').on('click', function(){
+
+    var projectLink = $(this).find("a");
+
+    projectLink.attr("target", "_blank");
+    window.open(projectLink.attr("href"));
+
     return false;
   });
 };

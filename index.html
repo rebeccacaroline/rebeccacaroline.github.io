@@ -8,12 +8,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Rebecca Holzschuh</title>
-  <link href='http://fonts.googleapis.com/css?family=Lobster|Open+Sans+Condensed:300' rel='stylesheet' type='text/css'>
-  <link href='http://fonts.googleapis.com/css?family=Quicksand' rel='stylesheet' type='text/css'>
-  <link href='http://fonts.googleapis.com/css?family=Cabin' rel='stylesheet' type='text/css'>
-  <link href='http://fonts.googleapis.com/css?family=Lora' rel='stylesheet' type='text/css'>
-  <link href='http://fonts.googleapis.com/css?family=Cabin+Condensed' rel='stylesheet' type='text/css'>
-
+  <link href='http://fonts.googleapis.com/css?family=Lobster|Open+Sans+Condensed:300|Quicksand|Cabin|Lora|Cabin+Condensed|Source+Sans+Pro:300' rel='stylesheet' type='text/css'>
 
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
   <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.3.15/angular.min.js"></script>
@@ -39,67 +34,41 @@
       <img src="imgs/downArrow.png" alt="arrow" class="arrow"/>
     </div>
 
-    <div class="fusion" data-image-src="imgs/concrete_seamless.png" data-parallax="scroll">
+    <div class="fusion parallax-window" data-image-src="imgs/concrete_seamless.png" data-parallax="scroll">
       <p class='fusion-title'>Projects</p>
-      <div class="ten columns projects">
-        <div class="flip-container five offset-by-one columns">
-          <div class="hover panel">
-            <div class="front">
-              <div class="box1 lifetime">
-                <p>LifeTime</p>
-              </div>
-            </div>
-            <a href="https://life-time.herokuapp.com"></a>
-            <div class="back">
-              <div class="box2 lifetime">
-                <p class="explanation">With the step data from the Jawbone API, users can see a graphical display of how their life style choices impact their health and longevity.</p>
-                <div class="contact-info projectz">
-                  <a href="https://github.com/jessygreben/lifetime" class="git"><img src="imgs/black-git.png" alt="github" class="logo" /></a>
-                </div>
-              </div>
+
+      <div class="projects">
+        <div class="project-box meterhero">
+          <img src="imgs/meterhero-logo.png"/>
+          <div class="bottom">
+            <p class="meter-explanation">Worked on PayPal and Bitcoin integrations, along with much of the internal site.</p>
+          </div>
+          <a href="https://www.meterhero.com/"></a>
+        </div>
+
+        <div class="project-box backbonelibrary">
+          <p>My Library</p>
+          <a href="https://mybackbonelibrary.herokuapp.com/"></a>
+           <div class="bottom">
+            <p class="lib-explanationz">My Library is a Backbone, Node and Express app to-read list. User auth and sharing is soon to come.</p>
+            <div class="contact-info projectz">
+              <a href="https://github.com/rebeccacaroline/psychic-octo-bugfixes" class="git"><img src="imgs/github.png" alt="github" class="logo" /></a>
             </div>
           </div>
         </div>
 
-        <div class="flip-container five offset-by-one columns">
-          <div class="hover panel">
-            <div class="front">
-              <div class="box1 backbonelibrary">
-                <p>My Library</p>
-              </div>
-            </div>
-            <a href="https://mybackbonelibrary.herokuapp.com/"></a>
-            <div class="back">
-              <div class="box2 backbonelibrary">
-                <p class="lib-explanationz">
-                My Library is a Backbone, Node and Express app to-read list. User auth and sharing is soon to come.</p>
-                <div class="contact-info projectz">
-                  <a href="https://github.com/rebeccacaroline/psychic-octo-bugfixes" class="git"><img src="imgs/github.png" alt="github" class="logo" /></a>
-                </div>
-              </div>
-            </div>
+        <div class="project-box lifetime">
+          <p>LifeTime</p>
+          <a href="https://life-time.herokuapp.com"></a>
+          <div class="bottom">
+          <p class="explanation">With the step data from the Jawbone API, users can see a graphical display of how their life style choices impact their health and longevity.
+          </p>
+          <div class="contact-info projectz">
+            <a href="https://github.com/jessygreben/lifetime" class="git"><img src="imgs/black-git.png" alt="github" class="logo" /></a>
           </div>
         </div>
+      </div>
 
-<!--         <div class="flip-container five offset-by-one columns">
-          <div class="hover panel">
-            <div class="front">
-              <div class="box1 whosaysdrewsays">
-                <p>Who Says? Drew Says!</p>
-              </div>
-            </div>
-            <a href="https://whosaysdrewsays.herokuapp.com"></a>
-            <div class="back">
-              <div class="box2 whosaysdrewsays">
-                <p class="explanationz">
-                Who Says Drew Says is an app that tells users what to wear, depending on that user's local weather.</p>
-                <div class="contact-info projectz">
-                  <a href="https://github.com/rebeccacaroline/potential-robot"><img src="imgs/github.png" alt="github" class="logo" /></a>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div> -->
       </div>
     </div>
 
