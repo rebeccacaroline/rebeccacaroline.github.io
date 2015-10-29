@@ -1,7 +1,7 @@
 app.controller("SkillsController", function($scope){
     $scope.skills = [
       {
-        name: "PostgreSQL",
+        name: "Postgres",
         icon: 'imgs/pgicon.png'
       },
       {
@@ -10,7 +10,11 @@ app.controller("SkillsController", function($scope){
       },
       {
         name: "Rails",
-        icon: 'imgs/rails.png'
+        icon: 'imgs/ruby_on_rails.png'
+      },
+      {
+        name: 'Sass',
+        icon: 'imgs/sass.png'
       },
       {
        name: 'HTML5',
@@ -19,6 +23,10 @@ app.controller("SkillsController", function($scope){
       {
         name: 'CSS3',
         icon: 'imgs/css3.png'
+      },
+      {
+        name: 'Ember',
+        icon: 'imgs/ember.png'
       },
       {
         name: "Node",

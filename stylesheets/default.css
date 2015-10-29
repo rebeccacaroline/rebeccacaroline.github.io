@@ -160,9 +160,16 @@ header {
 
 }
 
+.skills-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
 .skillies {
-  display: inline-block;
-  margin-left: 5%;
+  margin-left: 1em;
+  margin-right: 1em;
+  margin-top: 2em;
 }
 
 .skillz {
@@ -175,12 +182,33 @@ img.skill-logoz {
   width: 50px;
 }
 
-@media (max-width: 550px){
+@media (max-width: 900px) {
   .valley {
-    height: 1300px;
+    height: 600px;
+  }
+  .skillies {
+    margin-right: 2.5em;
+    margin-left: 2.5em;
+  }
+}
+
+@media (max-width: 640px){
+  .valley {
+    height: 800px;
+  }
+  .skillies {
+    margin-left: 3em;
+    margin-right: 3em;
+  }
+}
+
+@media (max-width: 550px) {
+  .valley {
+    height: 2000px;
   }
   .skillies {
     margin-left: 0;
+    margin-right: 0;
   }
 }
 
