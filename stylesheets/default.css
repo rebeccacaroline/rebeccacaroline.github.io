@@ -66,6 +66,16 @@ header {
   font-family: Cabin Condensed, sans-serif;
 }
 
+.meterhero-link {
+  text-decoration: none;
+  color: #FFFFFF;
+}
+
+.meterhero-link:hover{
+  text-decoration: underline;
+  color: #FFFFFF;
+}
+
 .logo {
   height: 35px;
   width: 35px;
