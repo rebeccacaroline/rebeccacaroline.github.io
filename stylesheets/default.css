@@ -66,12 +66,12 @@ header {
   font-family: Cabin Condensed, sans-serif;
 }
 
-.meterhero-link {
+.company-link {
   text-decoration: none;
   color: #FFFFFF;
 }
 
-.meterhero-link:hover{
+.company-link:hover{
   text-decoration: underline;
   color: #FFFFFF;
 }
